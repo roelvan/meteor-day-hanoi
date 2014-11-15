@@ -1,0 +1,10 @@
+<template name="customerItem">
+  <div class="post">
+    <div class="post-content">
+      <h3><a href="#">{{firstName}} {{lastName}}</a></h3>
+      <p>{{email}}</p>
+    </div>
+    <a href="#afModal" data-toggle="modal" class="discuss btn btn-default" collection="Customers" operation="update" doc="{{_id}}">Edit</a>
+    <a href="#afModal" data-toggle="modal" class="discuss btn btn-danger" collection="Customers" operation="remove" doc="{{_id}}">Delete</a>
+  </div>
+</template>
